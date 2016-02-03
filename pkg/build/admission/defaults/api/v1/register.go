@@ -5,10 +5,8 @@ import (
 	"k8s.io/kubernetes/pkg/runtime"
 )
 
-const GroupName = ""
-
 // SchemeGroupVersion is group version used to register these objects
-var SchemeGroupVersion = unversioned.GroupVersion{Group: GroupName, Version: "v1"}
+var SchemeGroupVersion = unversioned.GroupVersion{Group: "", Version: "v1"}
 
 func AddToScheme(scheme *runtime.Scheme) {
 	addKnownTypes(scheme)
@@ -17,8 +15,8 @@ func AddToScheme(scheme *runtime.Scheme) {
 // Adds the list of known types to api.Scheme.
 func addKnownTypes(scheme *runtime.Scheme) {
 	scheme.AddKnownTypes(SchemeGroupVersion,
-		&ProjectRequestLimitConfig{},
+		&BuildDefaultsConfig{},
 	)
 }
 
-func (obj *ProjectRequestLimitConfig) GetObjectKind() unversioned.ObjectKind { return &obj.TypeMeta }
+func (obj *BuildDefaultsConfig) GetObjectKind() unversioned.ObjectKind { return &obj.TypeMeta }
