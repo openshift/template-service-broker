@@ -1,4 +1,4 @@
-package api
+package template
 
 // annotation keys
 const (
