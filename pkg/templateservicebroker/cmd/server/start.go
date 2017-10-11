@@ -3,6 +3,7 @@ package server
 import (
 	"fmt"
 	"io"
+	"io/ioutil"
 	"net"
 
 	"github.com/spf13/cobra"
@@ -14,8 +15,6 @@ import (
 	genericapiserver "k8s.io/apiserver/pkg/server"
 	genericoptions "k8s.io/apiserver/pkg/server/options"
 	"k8s.io/kubernetes/pkg/kubectl/cmd/util"
-
-	"io/ioutil"
 
 	"github.com/openshift/origin/pkg/template/servicebroker/apis/config"
 	configinstall "github.com/openshift/origin/pkg/template/servicebroker/apis/config/install"
