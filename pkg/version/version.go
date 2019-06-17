@@ -61,13 +61,12 @@ func Get() version.Info {
 func init() {
 	buildInfo := prometheus.NewGaugeVec(
 		prometheus.GaugeOpts{
-			Name: "openshift_build_info",
-			Help: "A metric with a constant '1' value labeled by major, minor, git commit & git version from which OpenShift was built.",
+			Name: "template_service_broker_build_info",
+			Help: "A metric with a constant '1' value labeled by major, minor, git commit & git version from which Template Service Broker was built.",
 		},
 		[]string{"major", "minor", "gitCommit", "gitVersion"},
 	)
 	buildInfo.WithLabelValues(majorFromGit, minorFromGit, commitFromGit, versionFromGit).Set(1)
 
-	// we're ok with an error here for now because test-integration illegally runs the same process
-	prometheus.Register(buildInfo)
+	prometheus.MustRegister(buildInfo)
 }
