@@ -1,5 +1,5 @@
 hash: 22abd71c7178d336051110b1beb2e133b761d70ac6361fb72447b907ac05b935
-updated: 2019-07-16T16:36:28.30877794-04:00
+updated: 2019-07-17T16:59:34.823759561-04:00
 imports:
 - name: bitbucket.org/ww/goautoneg
   version: 2ae31c8b6b30d2f4c8100c20d527b571e9c433bb
@@ -129,7 +129,7 @@ imports:
 - name: github.com/google/gofuzz
   version: 24818f796faf91cd76ec7bddd72458fbced7a6c1
 - name: github.com/google/uuid
-  version: 8c31c18f31ede9fc8eae72290a7e7a8064e9b3e3
+  version: c2e93f3ae59f2904160ceaab466009f965df46d6
 - name: github.com/googleapis/gnostic
   version: 0c5108395e2debce0d731cf0287ddf7242066aba
   subpackages:
@@ -204,7 +204,7 @@ imports:
 - name: github.com/opencontainers/go-digest
   version: a6d0ee40d4207ea02364bd3b9e8e77b9159ba1eb
 - name: github.com/openshift/api
-  version: 25a4eebe16c8bcb53e28605f8d5b91df392daeba
+  version: 0390d1e77d6496df897e3a9d48b32d8827425320
   subpackages:
   - annotations
   - pkg/serialization
@@ -224,7 +224,7 @@ imports:
   - template/informers/externalversions/template/v1
   - template/listers/template/v1
 - name: github.com/openshift/library-go
-  version: e48a704752ab49d1a820b658d0f3d66d41245398
+  version: 83581c469d2eeb6dadfe86a4b6d8033b465ffd15
   subpackages:
   - pkg/serviceability
 - name: github.com/pborman/uuid
@@ -920,7 +920,7 @@ imports:
   version: f6da02f583256d1a15cc44a101c80bfa2080a46f
   repo: https://github.com/openshift/kubernetes-kubelet.git
 - name: k8s.io/kubernetes
-  version: 0a254611a05f93947e024a3916bba8e670a129dd
+  version: 633890629565205dd78bad77de2977033bbbc03a
   repo: https://github.com/openshift/kubernetes.git
   subpackages:
   - pkg/api/legacyscheme
